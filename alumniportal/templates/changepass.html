@@ -1,3 +1,8 @@
+{% if messages %}
+    {% for message in messages %}
+        {{message}}
+    {% endfor %}
+{% endif %}
 <h2>Change Password</h2>
 <form method="post">
   {% csrf_token %}
